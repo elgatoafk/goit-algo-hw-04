@@ -1,0 +1,6 @@
+Alex Korp,3000
+Nikita Borisenko,2000
+Sitarama Raju,1000
+Jon Snow,1500
+Alisent Hei,5000
+Jane Smith,800
