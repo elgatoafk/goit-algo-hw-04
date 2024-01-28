@@ -10,15 +10,14 @@ def total_salary(path:str) -> tuple:
     salary_sum = 0
     try:
         with open(path, 'r', encoding='utf-8') as salary_info:
-            while True:
-                if not (line := salary_info.readline()):
-                    break
+            while line := salary_info.readline():
                 line = line.split(',')
                 try:
                     line[1] = int(line[1])
                 except ValueError:
                     print("Incorrect data format")
                 lines.append(line)
+            
             for line in lines:
                 salary_sum += line[1]
             average_salary = salary_sum/len(lines)
